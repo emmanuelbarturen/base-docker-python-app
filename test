@@ -1,9 +1,0 @@
-#!/bin/bash
-# Obtén la ruta absoluta del script actual
-ruta_script="$(readlink -f "$0")"
-
-# Extrae el nombre del directorio raíz (el directorio que contiene el script)
-CONTAINER_NAME="$(basename "$(dirname "$ruta_script")")"
-
-# Imprime el nombre de la carpeta raíz
-echo "$CONTAINER_NAME"
